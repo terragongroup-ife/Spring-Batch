@@ -26,6 +26,19 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
+
+// https://mvnrepository.com/artifact/org.quartz-scheduler/quartz
+    compile group: 'org.quartz-scheduler', name: 'quartz', version: '2.3.0'
+
+    compile 'org.quartz-scheduler:quartz:2.3.0'
+
+    compile('org.springframework.boot:spring-boot-starter-web')
+
+    compile('org.springframework:spring-context-support')
+
+    compile('org.springframework:spring-tx')
+
+    compile('org.quartz-scheduler:quartz:2.3.0')
     compile("org.springframework.boot:spring-boot-starter-batch")
     compile("org.hsqldb:hsqldb")
     testCompile("junit:junit")
